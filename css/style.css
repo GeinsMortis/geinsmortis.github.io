@@ -1,0 +1,187 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    font-family: Ubuntu, sans-serif;
+}
+
+img {
+    height: 245px;
+    border-radius: 5px;
+    overflow-clip-margin: content-box;
+    overflow: clip;
+}
+
+h1 {
+    display: block;
+    font-size: 3em;
+    margin-block-start: 0.67em;
+    margin-block-end: 0.67em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+html,
+body,
+aside {
+    height: 100%;
+}
+
+section {
+    padding: 5% 0 0 350px;
+    margin-top: 10%;
+    max-width: 900px;
+    display: block;
+}
+
+html,
+body,
+aside,
+section {
+    height: 100%;
+}
+
+
+/* Alteração na seção de inicio */
+
+.aside-wrap {
+    position: fixed;
+    top: 0;
+    width: 240px;
+    background-image: linear-gradient(to bottom right, red, black);
+    height: 100%;
+    padding: 100px 20px;
+}
+
+.aside-wrap .menu-list {
+    list-style: none;
+}
+
+.aside-wrap .menu-item {
+    transition: all 1s;
+    line-height: 3;
+}
+
+.aside-wrap .menu-link {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.aside-wrap .menu-link:hover {
+    border-bottom: 2px solid;
+}
+
+section .section-title {
+    font-weight: bold;
+    font-size: 56px;
+}
+
+section #email {
+    text-decoration: none;
+    color: rgba(123, 5, 170, 0.993);
+}
+
+section p {
+    padding-top: 27px;
+    padding-bottom: 22px;
+    color: rgb(0, 0, 0);
+}
+
+section .links {
+    text-decoration: none;
+    background-color: rgb(104, 17, 104);
+    color: white;
+    padding: 8px;
+}
+
+section .links:hover {
+    background-color: #291d27;
+    transition: all 0.5s ease-in-out;
+}
+
+/* Alteração na seção de habilidades */
+
+.ferramentas {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-top: 10px;
+    padding: 0;
+}
+
+.ferramentas li {
+    list-style: none;
+    color: purple;
+    padding: 5px 0;
+    border: 2px solid rgb(104, 17, 104);
+    width: 80px;
+    height: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    text-align: center;
+}
+
+/* Alteração da parte experiências */
+
+#experiencias h1 {
+    margin-left: 10px;
+}
+
+#experiencias h2,
+#experiencias h3 {
+    color: purple;
+}
+
+#cargo-atual,
+#cargo-anterior {
+    padding: 12px;
+}
+
+/* Alteração da parte projetos */
+
+#projetos .project-card {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+#projetos .card {
+    width: 100%;
+}
+
+#projetos .card {
+    transform: 0.3s;
+    transition-behavior: normal;
+    transition-duration: 0.3s;
+    transition-timing-function: ease;
+    transition-delay: 0s;
+    transition-property: transform;
+    width: 400px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    padding: 5px;
+    border: 1px solid #e2e2e2;
+    gap: 5px;
+    border-radius: 2px;
+}
+
+#projetos .card img {
+    border: 1px solid #e2e2e2;
+}
+
+#projetos img {
+    width: 100%;
+}
+
+#projetos .card:hover {
+    transform: scale(1.1);
+}
