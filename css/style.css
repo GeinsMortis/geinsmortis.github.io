@@ -4,6 +4,13 @@
     font-family: Ubuntu, sans-serif;
 }
 
+:root {
+    --primary: #C94666;
+    --secondary: #98293d;
+    --hover: #5E2130;
+    --dark: #17080C;
+}
+
 img {
     height: 245px;
     border-radius: 5px;
@@ -52,7 +59,7 @@ section {
     position: fixed;
     top: 0;
     width: 240px;
-    background-image: linear-gradient(to bottom right, red, black);
+    background-image: linear-gradient(to bottom right, var(--primary), black);
     height: 100%;
     padding: 100px 20px;
 }
@@ -84,7 +91,7 @@ section .section-title {
 
 section #email {
     text-decoration: none;
-    color: rgba(123, 5, 170, 0.993);
+    color: var(--secondary);
 }
 
 section p {
@@ -100,16 +107,17 @@ section .links {
     padding: 8px;
 }
 
-section .links:hover {
-    background-color: #291d27;
-    transition: all 0.5s ease-in-out;
-}
-
 .social-links {
     display: flex;
     flex-wrap: wrap;
     gap: 25px;
     list-style: none;
+}
+
+.social-links li {
+    display: inline-block;
+    background-color: var(--secondary);
+    margin-right: 10px;
 }
 
 .social-links li a {
@@ -119,7 +127,12 @@ section .links:hover {
     font-weight: bold;
     font-size: 26px;
     text-decoration: none;
-    background-color: purple;
+    background-color: var(--secondary);
+}
+
+section .links:hover {
+    background-color: var(--hover);
+    transition: all 0.5s ease-in-out;
 }
 
 /* Alteração na seção de habilidades */
