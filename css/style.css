@@ -105,6 +105,23 @@ section .links:hover {
     transition: all 0.5s ease-in-out;
 }
 
+.social-links {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 25px;
+    list-style: none;
+}
+
+.social-links li a {
+    padding: 10px;
+    display: block;
+    color: #fff;
+    font-weight: bold;
+    font-size: 26px;
+    text-decoration: none;
+    background-color: purple;
+}
+
 /* Alteração na seção de habilidades */
 
 .ferramentas {
@@ -159,7 +176,6 @@ section .links:hover {
 
 #projetos .card {
     transform: 0.3s;
-    transition-behavior: normal;
     transition-duration: 0.3s;
     transition-timing-function: ease;
     transition-delay: 0s;
