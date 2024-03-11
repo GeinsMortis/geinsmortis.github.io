@@ -100,13 +100,6 @@ section p {
     color: rgb(0, 0, 0);
 }
 
-section .links {
-    text-decoration: none;
-    background-color: rgb(104, 17, 104);
-    color: white;
-    padding: 8px;
-}
-
 .social-links {
     display: flex;
     flex-wrap: wrap;
